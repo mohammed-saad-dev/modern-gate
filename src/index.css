@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/*start var */ 
+:root{
+    --fisrtColor:#865A1F;
+    --secondColor:#DBAD60;
+    --thirdColor:#252525;
+}
+/*end var*/
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Julius Sans One', sans-serif;
+    background-image: url(./images/wow.jpg);
+    height: 360vh;
+}
+
+/*start media*/
+
+
+.container{
+    padding:0 15px;
+    margin:0px  auto
+}
+/*Small*/
+@media (min-width:780px) {
+    .container{
+        width:750px
+    }
+}
+/*medium*/
+@media (min-width:992px) {
+    .container{
+        width:970px
+    }
+}
+/*large*/
+@media (min-width:1200px) {
+    .container{
+        width:1170px
+    }
+}
+
+/*start with css file*/ 
+
+.HomePage,
+.AboutUsSection,
+.PartnersSection{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.HomePage i{
+    color: var(--secondColor);
+    font-size: x-large;
+}
+
+.Circle{
+    width: 500px;
+    height: 500px;
+    background-color: var(--thirdColor);
+    border-radius: 50%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 10px;
+}
+
+.Circle p{
+    font-size:60px
+}
+
+.logo{
+    width: 400px;
+}
+
+.Circle button{
+    width: 189px;
+    height: 55px;
+    background: transparent;
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    border: var(--secondColor) 1px solid;
+    font-size: larger;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;
+    cursor: pointer;
+}
+
+/*about us section*/     
+
+.tittle{
+    color: white;
+    border-bottom: var(--secondColor) 1px solid ;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.AboutUs{
+    height:500px ;
+    width: 700px;
+    border-radius: 62px;
+    background: linear-gradient( to right bottom , rgba(255, 255, 255, 0.4) , rgba(255,255,255, 0.1));
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+.right,
+.left{
+    position: relative;
+    top: -2px;
+}
+
+.buttons{
+    position: relative;
+    top: 5rem;
+}
+.buttons button{
+    cursor: pointer;
+}
+.acctive{    
+    height:40px ;
+    width: 40px;
+    background: transparent;
+    border: #BD9552 solid 1px; 
+    padding: 10px;
+    color: var(--secondColor);
+    border-radius: 12px;
+    margin:20px 10px ;
+    font-size:large;
+}
+.unacctiv{
+    border: #BD955266 solid 1px; 
+    color: #BD955266;
+    height:40px ;
+    width: 40px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 12px;
+    margin:20px 10px ;
+    font-size: large;
+
+}
+.subject{
+    color: white;
+    font-size: 200%;
+    width: 600px;
+    line-height: 1.6;
+    height: 200px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.coll{
+    font-size:200%
+}
+/*Partners section*/
+.Partners{
+    height:500px ;
+    width: 700px;
+    border-radius: 62px;
+    background: linear-gradient( to right bottom , rgba(255, 255, 255, 0.4) , rgba(255,255,255, 0.1));
+    margin-top: 30px;
+}
+
+/*start with partner section*/ 
+.Partner{
+    height:500px ;
+    width: 700px;
+    border-radius: 62px;
+    background: linear-gradient( to right bottom , rgba(255, 255, 255, 0.4) , rgba(255,255,255, 0.1));
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px 100px;
+    row-gap: 20px;
+    column-gap: 25px;
+}
+.HP{
+    width: 100px;
+}
+.PartnersSection img{
+width: 200px;
+}
+
+/*start with info sesction*/ 
+.information{ 
+    display:flex; 
+    justify-content: space-between;
+
+}
+
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px
+}
+.left-side{
+    margin-top:10px
+}
+.contact,
+.location{
+    background-color:var(--secondColor);
+    color: white;
+    width: 190px;
+    padding: 7px;
+}
+.contact { 
+    text-align:end
+}
+
+.for-icon{
+    display:flex;
+    font-size: larger;
+    margin-top:7px
+}
+.for-icon i{
+    color:var(--secondColor);
+    margin:7px
+}
+.for-icon p{
+    color:white;
+    margin:7px
+}
+.thanks{
+    color: white;
+    font-size: xx-large;
+    width: 400px;
+    text-align: center;
+}
+
+.logo-footer{
+    width:150px
+}
+
+.for-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    width: 400px;
+    margin-left: -35px;
+}
